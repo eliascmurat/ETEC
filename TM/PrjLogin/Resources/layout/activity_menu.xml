@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp">
+    <TextView
+        android:text="My app's"
+        android:textColor="#ecf0f1"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/txtTitle"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:text="IMC"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="BtnImc_Click"
+        android:id="@+id/btnIMC" 
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:text="Gasolina x Etanol"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGasEta" 
+        android:onClick="BtnGasEta_Click"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:text="ViaCEP"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViaCep" 
+        android:onClick="BtnViaCep_Click"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:text="Google Map's"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMap" 
+        android:onClick="BtnMap_Click"
+        tools:ignore="HardcodedText"/>
+    <Button
+        android:text="CRUD"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCrud" 
+        android:onClick="BtnCrud_Click"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>

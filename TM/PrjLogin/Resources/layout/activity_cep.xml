@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp">
+    <TextView
+        android:text="ViaCEP"
+        android:textColor="#ecf0f1"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/txtTitle"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:inputType="number"
+        android:hint="CEP: "
+        android:digits="0123456789"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/edtCep"
+        tools:ignore="HardcodedText,XmlNamespace" />
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:onClick="BtnSearch_Click"
+        android:id="@+id/btnSearch"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>

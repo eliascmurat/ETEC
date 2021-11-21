@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp">
+    <TextView
+        android:text="Register"
+        android:textColor="#ecf0f1"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/txtTitle"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:inputType="text"
+        android:hint="Username: "
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:maxLength="50"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/edtUsername"
+        tools:ignore="HardcodedText,XmlNamespace" />
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Password: "
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*-_@"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/edtPassword"
+        tools:ignore="HardcodedText,XmlNamespace" />
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Confirm password: "
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*-_@"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/edtPasswordConfirm"
+        tools:ignore="HardcodedText,XmlNamespace" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <Button
+            android:text="Save"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:textSize="12sp"
+            android:onClick="BtnSave_Click"
+            android:id="@+id/btnSave"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:text="Return"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:textSize="12sp"
+            android:onClick="BtnCancel_Click"
+            android:id="@+id/btnReturn"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>

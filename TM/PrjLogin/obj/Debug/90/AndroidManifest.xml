@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="br.com.etecfernandoprestes.x3iiem.tm.cms32" android:installLocation="preferExternal">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_key" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    <activity android:label="CepActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.CepActivity" />
+    <activity android:label="CombustivelActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.CombustivelActivity" />
+    <activity android:label="CrudActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.CrudActivity" />
+    <activity android:label="IMCActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.IMCActivity" />
+    <activity android:label="LoginActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.LoginActivity" />
+    <activity android:label="PrjAllApp" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="MapActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.MapActivity" />
+    <activity android:label="MenuActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.MenuActivity" />
+    <activity android:label="RegisterActivity" android:theme="@style/Theme.AppCompat.NoActionBar" android:name="crc64e5b9c17761ebf6ec.RegisterActivity" />
+    <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.ConnectivityBroadcastReceiver" />
+    <provider android:authorities="br.com.etecfernandoprestes.x3iiem.tm.cms32.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
+    </provider>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="br.com.etecfernandoprestes.x3iiem.tm.cms32.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.br.com.etecfernandoprestes.x3iiem.tm.cms32" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

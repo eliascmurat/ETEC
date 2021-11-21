@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp">
+    <TextView
+        android:text="Combustivel"
+        android:textColor="#ecf0f1"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/txtTitle"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:src="@drawable/gasolina"
+        android:layout_width="match_parent"
+        android:layout_height="100.0dp"
+        android:id="@+id/imgvGasolina"
+        android:contentDescription="icon_gasolina"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:digits="0123456789,"
+        android:layout_marginBottom="20dp"
+        android:hint="Gasolina: "
+        android:id="@+id/EdtGasolina"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:src="@drawable/etanol"
+        android:layout_width="match_parent"
+        android:layout_height="100.0dp"
+        android:id="@+id/imgvEtanol"
+        android:contentDescription="icon_etanol"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:textColor="#ecf0f1"
+        android:textColorHint="#bdc3c7"
+        app:backgroundTint="#bdc3c7"
+        android:digits="0123456789,"
+        android:layout_marginBottom="20dp"
+        android:hint="Etanol: "
+        android:id="@+id/EdtEtenol"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:onClick="BtnCalcular_Click"
+        android:text="Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120px"
+        android:id="@+id/btnCalcular"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

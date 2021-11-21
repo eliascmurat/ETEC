@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjAllApp", "PrjLogin\PrjAllApp.csproj", "{0084F2EC-B36C-4194-A840-77ECB0BE705D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0084F2EC-B36C-4194-A840-77ECB0BE705D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C27D3ED2-5E58-4009-B301-8D3FA68F53AA}
+	EndGlobalSection
+EndGlobal
